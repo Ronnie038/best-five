@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500&display=swap');
+
+.font-lobster {
+	font-family: 'Lobster', cursive;
+}
+
+.header-text-section {
+	width: 350px;
+}
+
+.player {
+	/* width: 300px; */
+
+	box-shadow: 2px 2px 2px 1px rgba(243, 241, 241, 0.2);
+}
+
+ol li {
+	margin: 1.5rem 0;
+}
+
+ol li span {
+	margin-left: 1rem;
+	font-weight: 500;
+}
+
+.budget div input {
+	width: 100px;
+}
+
+footer {
+	min-height: 100px;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Select your team</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+
+	<body class="bg-black">
+		<!-- 
+            | section header start
+         -->
+		<header class="flex text-white my-11">
+			<div>
+				<img
+					class="bg-black"
+					src="https://img.freepik.com/free-photo/american-football-player-posing-with-ball-black-background_155003-14577.jpg?w=360"
+					alt=""
+				/>
+			</div>
+
+			<div class="header-text-section text-center">
+				<h1 class="text-3xl font-bold text-red-500 font-lobster">
+					Select your best team
+				</h1>
+				<p>
+					Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+					sint. Velit officia consequat duis enim velit mollit. Exercitation
+					veniam consequat sunt nostrud amet.
+				</p>
+			</div>
+		</header>
+		<!-- 
+            | main section start 
+         -->
+		<main class="flex">
+			<!-- 
+                * player section start
+             -->
+			<section
+				class="section-player text-white text-center ml-5 grid grid-cols-3 gap-5 w-3/5"
+			>
+				<!-- 
+                    * player
+                 -->
+				<div class="player border-white">
+					<img
+						class="w"
+						src="https://imgresizer.eurosport.com/unsafe/1200x1200/smart/filters:format(jpeg)/origin-imgresizer.eurosport.com/2021/08/05/3195392-65463108-2560-1440.jpg"
+						alt=""
+					/>
+
+					<h2 class="text-2xl font-bold my-2">Lionel Messi</h2>
+					<p class="my-2">36 Goals . 120 Assist</p>
+					<button type="button" class="bg-[#015196] mb-5 w-3/4 text-2xl py-2">
+						Select
+					</button>
+				</div>
+				<!-- 
+                    * player
+                 -->
+				<div class="player border-white">
+					<img
+						class="w"
+						src="https://images.news18.com/ibnlive/uploads/2022/03/pjimage-2022-03-11t104410.084.jpg"
+						alt=""
+					/>
+
+					<h2 class="text-2xl font-bold my-2">Neymar Jr</h2>
+					<p class="my-2">36 Goals . 120 Assist</p>
+					<button type="button" class="bg-[#015196] mb-5 w-3/4 text-2xl py-2">
+						Select
+					</button>
+				</div>
+				<!-- 
+                    * player
+                 -->
+				<div class="player border-white">
+					<img
+						class="w"
+						src="https://www.planetsport.com/image-library/square/1200/k/kylian-mbappe-psg-france-3-april-2022.jpg"
+						alt=""
+					/>
+
+					<h2 class="text-2xl font-bold my-2">Kylian Mbappe</h2>
+					<p class="my-2">36 Goals . 120 Assist</p>
+					<button type="button" class="bg-[#015196] mb-5 w-3/4 text-2xl py-2">
+						Select
+					</button>
+				</div>
+				<!-- 
+                    * player
+                 -->
+				<div class="player border-white">
+					<img
+						class="w"
+						src="https://celebsinfos.com/wp-content/uploads/2022/06/1_GettyImages-1273167326.jpg"
+						alt=""
+					/>
+
+					<h2 class="text-2xl font-bold my-2">Vitor Machado</h2>
+					<p class="my-2">36 Goals . 120 Assist</p>
+					<button type="button" class="bg-[#015196] mb-5 w-3/4 text-2xl py-2">
+						Select
+					</button>
+				</div>
+				<!-- 
+                    * player
+                 -->
+				<div class="player border-white">
+					<img
+						class="w"
+						src="https://i.pinimg.com/736x/78/72/68/7872687229dd193a437a4063bf373940.jpg"
+						alt=""
+					/>
+
+					<h2 class="text-2xl font-bold my-2">Segio Ramos</h2>
+					<p class="my-2">36 Goals . 120 Assist</p>
+					<button type="button" class="bg-[#015196] mb-5 w-3/4 text-2xl py-2">
+						Select
+					</button>
+				</div>
+				<!-- 
+                    * player
+                 -->
+				<div class="player border-white">
+					<img
+						class="w"
+						src="https://i0.wp.com/arsedevils.com/wp-content/uploads/2021/11/0_GettyImages-1311850164.jpg?resize=640%2C640&ssl=1"
+						alt=""
+					/>
+
+					<h2 class="text-2xl font-bold my-2">Renato Sanches</h2>
+					<p class="my-2">36 Goals . 120 Assist</p>
+					<button type="button" class="bg-[#015196] mb-5 w-3/4 text-2xl py-2">
+						Select
+					</button>
+				</div>
+			</section>
+			<aside class="text-white ml-14">
+				<div class=" ">
+					<h1 class="text-3xl font-bold">Selected-V</h1>
+					<hr class="mb-11 mt-2" />
+
+					<ol
+						type="1"
+						id="selected-player"
+						class="list-decimal text-2xl text-gray-400 font-bold"
+					>
+						<!-- <li><span>Linonel Messi</span></li> -->
+					</ol>
+				</div>
+
+				<div class="budget my-11 text-center font-bold text-gray-400">
+					<h1 class="text-3xl">Budget</h1>
+					<hr class="mt-3" />
+					<div class="mt-11 mb-4">
+						<span>Per Player</span>
+						<input
+							type="number"
+							name=""
+							id="player-input-cost"
+							class="bg-black border-2 rounded p-1 ml-2"
+							placeholder="1000"
+							value="0"
+						/>
+					</div>
+					<button
+						id="calculate"
+						class="bg-[#015196] text-white px-4 w-full py-2 font-bold"
+					>
+						Calculate
+					</button>
+
+					<p class="my-5">
+						Player Expenses
+						<span class="ml-2">$<span id="player-expenses">00</span> </span>
+					</p>
+
+					<div class="mt-6 mb-2 text-right">
+						<span>Manager</span>
+						<input
+							type="number"
+							name=""
+							id="manager-input-cost"
+							class="bg-black border-2 rounded p-1 ml-2"
+							placeholder="1000"
+							value="0"
+						/>
+					</div>
+					<div class="mb-4 text-right">
+						<span>Coach</span>
+						<input
+							type="number"
+							name=""
+							id="coach-input-cost"
+							class="bg-black border-2 rounded p-1 ml-2"
+							placeholder="1000"
+							value="0"
+						/>
+					</div>
+					<button
+						id="total-calculate"
+						class="bg-[#015196] text-white px-4 w-full py-2 font-bold"
+					>
+						Calculate Total
+					</button>
+
+					<p class="my-3 text-lg text-gray-300">
+						Total
+						<span class="ml-4 text-red-500">$<span id="total">00</span></span>
+					</p>
+				</div>
+			</aside>
+		</main>
+
+		<footer class="text-white text-center mt-11">
+			<p>copy right by@ WebEye Israfil</p>
+		</footer>
+	</body>
+</html>
